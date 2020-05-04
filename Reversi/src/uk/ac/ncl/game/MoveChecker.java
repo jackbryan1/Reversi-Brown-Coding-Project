@@ -56,6 +56,7 @@ public class MoveChecker {
             int[] dir = move.getDirection();
             int d_row = cell.getRow();
             int d_col = cell.getColumn();
+            cells[d_row][d_col].setValue(colour);
 
             while (d_col != move.getCell().getColumn() || d_row != move.getCell().getRow()) {
 
